@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/erweimamain_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/common_title_reback"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentStart="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="二维码付款"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f6f6f6"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="请选择结算类型"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/checkone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/check"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:text="T+1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/checktwo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/check"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:text="D+0"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="请选择交易类型"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textSize="15sp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:id="@+id/zfberweima"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/zfberweima"/>
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/wechaterweima"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/wechaterweima"/>
+
+        <ImageView
+            android:id="@+id/yinlianerweima"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/yinlianerweima"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

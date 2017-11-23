@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f1f7"
+    tools:context="com.futeng.happypays.activity.erweimashoukuan.HelpCenterActivity">
+
+    <RelativeLayout
+        android:background="@color/home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88">
+
+        <ImageView
+            android:id="@+id/helpcenter_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/whiteback"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x26"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="帮助中心"
+            android:textSize="@dimen/y34"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+        android:id="@+id/helpone"
+        android:layout_marginTop="@dimen/y34"
+        android:layout_width="@dimen/x680"
+        android:layout_height="@dimen/y113"
+        android:background="@drawable/statementbg"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x64"
+            android:layout_height="@dimen/y64"
+            android:src="@mipmap/question"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x18"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这是一款什么产品?"
+            android:textSize="@dimen/y26"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x15"
+            android:textColor="#444444"/>
+
+    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/helpones"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y50"
+                    android:src="@mipmap/answer"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/x18"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="创乐付聚合版APP是一款线上支付收单产品，当您需要收款时，可使用二维码进行收款，进行扫码支付的消费者可使用贷记卡、借记卡消费，方便快捷。"
+                    android:textSize="@dimen/y22"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="#444444"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/statementbg"
+                android:id="@+id/helptwo"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_width="@dimen/x680"
+                android:layout_height="@dimen/y113"
+                android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x64"
+            android:layout_height="@dimen/y64"
+            android:src="@mipmap/question"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x18"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我未实名认证可以使用本产品吗？"
+            android:textSize="@dimen/y26"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x15"
+            android:textColor="#444444"/>
+
+
+
+
+
+    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/helptwos"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y50"
+                    android:src="@mipmap/answer"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/x18"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="如果您需要将消费者消费的钱当天打款你的提现储蓄卡上，您只需要在交易的时候选择D+0交易模式，此模式为实时到账模式，消费者消费的每一笔将会在几分钟之内到账到你的提现储蓄卡上。"
+                    android:textSize="@dimen/y22"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="#444444"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/statementbg"
+                android:id="@+id/helpthree"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_width="@dimen/x680"
+                android:layout_height="@dimen/y113"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x64"
+                    android:layout_height="@dimen/y64"
+                    android:src="@mipmap/question"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x18"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="消费者消费的钱最终会到我账户上吗？"
+                    android:textSize="@dimen/y26"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="#444444"/>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/helpthrees"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y50"
+                    android:src="@mipmap/answer"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/x18"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="我们会把消费者消费的钱在第二天打到你指定的提现储蓄卡上面，提现储蓄卡是在 我的->修改提现储蓄卡 里进行设置，提现储蓄卡务必慎重修改，由于个人原因导致提现储蓄卡信息错误从而导致财产损失的本公司概不负责。"
+                    android:textSize="@dimen/y22"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="#444444"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/statementbg"
+                android:id="@+id/helpfour"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_width="@dimen/x680"
+                android:layout_height="@dimen/y113"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x64"
+                    android:layout_height="@dimen/y64"
+                    android:src="@mipmap/question"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x18"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="消费者消费的钱可不可以当天打到我的提现储蓄卡上？"
+                    android:textSize="@dimen/y26"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="#444444"/>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/helpfours"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y50"
+                    android:src="@mipmap/answer"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/x18"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="如果您需要将消费者消费的钱当天打款你的提现储蓄卡上，您只需要在交易的时候选择D+0交易模式，此模式为实时到账模式，消费者消费的每一笔将会在几分钟之内到账到你的提现储蓄卡上。"
+                    android:textSize="@dimen/y22"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="#444444"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/statementbg"
+                android:id="@+id/five"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_width="@dimen/x680"
+                android:layout_height="@dimen/y113"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x64"
+                    android:layout_height="@dimen/y64"
+                    android:src="@mipmap/question"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x18"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="消费积分是如何获取的，以及消费积分可以用来做什么？"
+                    android:textSize="@dimen/y26"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="#444444"/>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/helpfives"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y50"
+                    android:src="@mipmap/answer"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/x18"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="目前消费积分获取途径有2种：一个是消费者进行扫码消费的时候根据一定比例获取，一个是签到获取。扫码消费的积分换算公式是7块钱1积分，即如果您当天通过二维码交易了70000RMB交易，您将有10000积分。签到方式获取的积分规则为签到一天50积分。"
+                    android:textSize="@dimen/y22"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="#444444"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/statementbg"
+                android:id="@+id/helpsix"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_width="@dimen/x680"
+                android:layout_height="@dimen/y113"
+                android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x64"
+            android:layout_height="@dimen/y64"
+            android:src="@mipmap/question"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x18"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="消费积分可以用来做什么？"
+            android:textSize="@dimen/y26"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x15"
+            android:textColor="#444444"/>
+
+
+
+
+
+    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/helpsixs"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x48"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y50"
+                    android:src="@mipmap/answer"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/x18"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="消费积分可以在积分商城里兑换商品，也可以进行提现，积分提现公式是600积分 = 1元，70000积分可以提现116.66元。"
+                    android:textSize="@dimen/y22"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:textColor="#444444"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

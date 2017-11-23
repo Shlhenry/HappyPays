@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="#fff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y89"
+        android:text="收款"
+        android:textSize="@dimen/y34"
+        android:textColor="#fff"
+        android:background="@color/home"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y291"
+        android:orientation="horizontal"
+        android:background="@color/home">
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            
+            <ImageView
+                android:layout_width="@dimen/x136"
+                android:layout_height="@dimen/y136"
+                android:src="@mipmap/erweima"
+                android:layout_marginTop="@dimen/y52"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二维码收款"
+                android:textColor="#fff"
+                android:textSize="@dimen/y26"
+                android:layout_marginTop="@dimen/y30"/>
+            
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x136"
+                android:layout_height="@dimen/y136"
+                android:src="@mipmap/unionpay"
+                android:layout_marginTop="@dimen/y52"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银联扫码"
+                android:textColor="#fff"
+                android:textSize="@dimen/y26"
+                android:layout_marginTop="@dimen/y30"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x136"
+                android:layout_height="@dimen/y136"
+                android:src="@mipmap/nocard"
+                android:layout_marginTop="@dimen/y52"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无卡快捷"
+                android:textColor="#fff"
+                android:textSize="@dimen/y26"
+                android:layout_marginTop="@dimen/y30"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y14"
+        android:background="#F0F1F7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/y10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/x69"
+                android:layout_height="@dimen/y71"
+                android:src="@mipmap/wechatwater"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/y10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/x69"
+                android:layout_height="@dimen/y71"
+                android:src="@mipmap/alipaywater"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/y10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/x69"
+                android:layout_height="@dimen/y71"
+                android:src="@mipmap/unionpaywater"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/y10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/x69"
+                android:layout_height="@dimen/y71"
+                android:src="@mipmap/nocardwater"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/xTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:xTabBackgroundColor="#fff"
+        app:xTabMode="scrollable"
+        app:xTabIndicatorColor="@color/home"
+        app:xTabSelectedTextColor="@color/home"
+        app:xTabTextColor="#999999"
+        app:xTabTextSize="@dimen/y26"
+        app:xTabDisplayNum="4"
+        app:xTabSelectedTextSize="@dimen/y30"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

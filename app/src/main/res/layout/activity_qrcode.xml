@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.futeng.happypays.activity.erweimashoukuan.QRcodeActivity">
+
+    <RelativeLayout
+        android:background="@color/home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88">
+
+        <ImageView
+            android:id="@+id/shap_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/whiteback"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x40"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="二维码收款"
+            android:textSize="@dimen/y34"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y301"
+        android:background="@color/home"
+        android:orientation="vertical">
+
+        <RelativeLayout
+        android:id="@+id/selectback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y86"
+        android:layout_marginTop="@dimen/y16"
+        android:layout_marginLeft="@dimen/x67"
+        android:layout_marginRight="@dimen/x67"
+        android:background="@mipmap/notselecteddling"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/selectedtyi"
+            android:layout_width="@dimen/x326"
+            android:layout_height="@dimen/y71"
+            android:background="@mipmap/selectedtyi"/>
+
+        <ImageView
+            android:id="@+id/selecteddling"
+            android:layout_width="@dimen/x326"
+            android:layout_height="@dimen/y71"
+            android:background="@mipmap/selecteddling"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            
+            <ImageView
+                android:layout_marginLeft="@dimen/x80"
+                android:id="@+id/alipay_img"
+                android:layout_width="@dimen/x158"
+                android:layout_height="@dimen/y158"
+                android:layout_gravity="center"
+                android:src="@mipmap/selectedalipay"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/wechat_img"
+                    android:layout_marginLeft="@dimen/x75"
+                    android:layout_width="@dimen/x158"
+                    android:layout_height="@dimen/y158"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/weixin"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y258"
+        android:layout_marginLeft="@dimen/x32"
+        android:layout_marginTop="@dimen/y18"
+        android:layout_marginRight="@dimen/x32"
+        android:background="@mipmap/dajuxing">
+
+        <ImageView
+            android:id="@+id/child_pays_img"
+            android:layout_width="@dimen/x74"
+            android:layout_height="@dimen/y34"
+            android:layout_marginTop="@dimen/y38"
+            android:layout_marginLeft="@dimen/x49"
+            android:background="@mipmap/zhityi"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入收款金额"
+            android:textColor="#999999"
+            android:textSize="@dimen/y22"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_marginLeft="@dimen/x149"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textSize="@dimen/y70"
+            android:textColor="#565555"
+            android:layout_marginLeft="@dimen/x90"
+            android:layout_marginTop="@dimen/y95"/>
+
+        <EditText
+            android:layout_width="@dimen/x340"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y60"
+            android:textColor="#565555"
+            android:layout_marginLeft="@dimen/x170"
+            android:layout_marginTop="@dimen/y100"
+            android:background="@null"
+            android:hint="0.00"
+            android:maxLength="10"
+            android:minLines="3"
+            android:inputType="numberDecimal"
+            android:id="@+id/editText2"/>
+
+        <TextView
+            android:id="@+id/qrcode_ok"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="确定"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/x513"
+            android:textSize="@dimen/y26"
+            android:textColor="#4D91E9"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/editText2"/>
+
+
+
+
+    </RelativeLayout>
+    
+    
+    <ImageView
+        android:id="@+id/qrcode_img"
+        android:layout_width="@dimen/x287"
+        android:layout_height="@dimen/y285"
+        android:layout_marginTop="@dimen/y70"
+        android:layout_marginLeft="@dimen/x217"/>
+    
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/findqrcode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:gravity="center"
+        android:text="查询是否支付成功"
+        android:textColor="#4D91E9"
+        android:textSize="@dimen/y35"
+        android:layout_marginTop="@dimen/y50"/>
+
+
+
+
+</LinearLayout>

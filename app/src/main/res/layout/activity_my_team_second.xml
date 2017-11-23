@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f4f6"
+    tools:context=".activity.allgridview.MyTeamFragment.MyTeamSecondfragment">
+
+    <LinearLayout
+        android:id="@+id/myteamsecond"
+        android:layout_marginLeft="@dimen/x22"
+        android:layout_marginRight="@dimen/x22"
+        android:layout_marginTop="@dimen/y17"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/y126"
+        android:background="@drawable/mytean_me"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x54"
+            android:layout_height="@dimen/y39"
+            android:background="@mipmap/referrals"
+            android:layout_marginTop="@dimen/y35"
+            android:layout_marginLeft="@dimen/x67"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/x38">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商户名称:"
+                    android:textSize="@dimen/y25"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/team_second_amname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxx"
+                    android:textSize="@dimen/y21"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:textColor="#999999"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号:"
+                    android:textSize="@dimen/y25"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/team_second_amPersonPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxx"
+                    android:textSize="@dimen/y21"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:textColor="#999999"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="等级:"
+                    android:textSize="@dimen/y25"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/team_second_gradeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxx"
+                    android:textSize="@dimen/y21"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:textColor="#999999"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/commentno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/commentno"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="#c0c0c0"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="您还未有推荐人"/>
+    </LinearLayout>
+
+</LinearLayout>

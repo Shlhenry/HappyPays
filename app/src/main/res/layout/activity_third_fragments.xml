@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.futeng.happypays.fragment.ThirdFragments">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y89"
+        android:background="@color/home">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收益"
+            android:textSize="@dimen/y34"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2"/>
+
+        <TextView
+            android:id="@+id/rule"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="推荐方式"
+            android:layout_marginLeft="@dimen/x80"
+            android:textSize="@dimen/y28"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/x35"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y306"
+        android:background="@color/home">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="推荐所得积分(分)"
+            android:textSize="@dimen/y24"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/y27"/>
+
+        <TextView
+            android:id="@+id/getintergral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/y46"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/y85"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/y158"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计获得积分(分):"
+                android:textSize="@dimen/y24"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/allintergral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/y46"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="@dimen/y26"
+            android:text="如需提现可到钱包进行提现"
+            android:layout_marginTop="@dimen/y245"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y14"
+        android:background="#F0F1F7"/>
+
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/xTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:xTabBackgroundColor="#fff"
+        app:xTabMode="scrollable"
+        app:xTabIndicatorColor="@color/home"
+        app:xTabSelectedTextColor="@color/home"
+        app:xTabTextColor="#999999"
+        app:xTabTextSize="@dimen/y28"
+        app:xTabDisplayNum="3"
+        app:xTabSelectedTextSize="@dimen/y30"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

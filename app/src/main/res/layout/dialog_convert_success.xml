@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:gravity="center">
+
+   
+    <ImageView
+        android:layout_width="@dimen/x526"
+        android:layout_height="@dimen/y367"
+        android:src="@mipmap/success"/>
+
+        <Button
+            android:layout_marginTop="@dimen/y150"
+            android:id="@+id/convert_btn"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/dialogdelete"
+            android:gravity="center"/>
+
+    
+
+
+
+
+</LinearLayout>

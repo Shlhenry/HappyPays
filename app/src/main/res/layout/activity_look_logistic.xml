@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/home">
+
+        <ImageView
+            android:id="@+id/looklogistic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x40"
+            android:src="@mipmap/whiteback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="快递查询"
+            android:textColor="#fff"
+            android:textSize="@dimen/y34"
+            android:id="@+id/textView8" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y130"
+        android:orientation="horizontal">
+        
+        <LinearLayout
+            android:layout_width="@dimen/x118"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/showlogisticimg"
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/y70"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y10"
+                android:src="@mipmap/moren"/>
+
+            <TextView
+                android:id="@+id/showlogisticname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y7"
+                android:text="xxxx"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/x2"
+            android:layout_height="match_parent"
+            android:background="#ECEDF4"/>
+
+        <EditText
+            android:id="@+id/EditText_logistic"
+            android:layout_width="@dimen/x438"
+            android:layout_height="@dimen/y60"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入快递单号..."
+            android:textColorHint="#B9B9B9"
+            android:textSize="@dimen/y24"
+            android:paddingLeft="@dimen/x7"
+            android:layout_marginLeft="@dimen/x31"
+            android:background="@drawable/looklogistic"/>
+
+        <LinearLayout
+            android:id="@+id/find_logistic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            
+            <TextView
+                android:layout_width="@dimen/x91"
+                android:layout_height="@dimen/y44"
+                android:text="查询"
+                android:textSize="@dimen/y29"
+                android:textColor="#4F91EA"
+                android:gravity="center"
+                android:background="@drawable/lookbtn"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:background="#E6E6E6"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <com.futeng.happypays.tools.IndexBar
+            android:id="@+id/index_bar"
+            android:layout_width="30dp"
+            app:normalColor="@color/home"
+            app:selecColor="#fff"
+            app:indexSize="14sp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/index_bar_bg"/>
+
+        <TextView
+            android:id="@+id/tv_letter"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tv_index_bg"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</LinearLayout>  

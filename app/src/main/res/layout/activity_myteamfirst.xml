@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f4f6"
+    tools:context=".activity.allgridview.MyTeamFragment.MyteamFirstfragment">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/x22"
+        android:layout_marginRight="@dimen/x22"
+        android:layout_marginTop="@dimen/y17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y112"
+        android:background="@drawable/mytean_me"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="@dimen/x54"
+            android:layout_height="@dimen/y39"
+            android:background="@mipmap/me"
+            android:layout_marginTop="@dimen/y35"
+            android:layout_marginLeft="@dimen/x67"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/x38">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商户名称:"
+                    android:textSize="@dimen/y25"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/myteam_amname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxx"
+                    android:textSize="@dimen/y21"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:textColor="#999999"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号:"
+                    android:textSize="@dimen/y25"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/myteamid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxx"
+                    android:textSize="@dimen/y21"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:textColor="#999999"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="等级:"
+                    android:textSize="@dimen/y25"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/dengjiname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxx"
+                    android:textSize="@dimen/y21"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:textColor="#999999"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y63"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="@dimen/x31"
+            android:layout_height="@dimen/y31"
+            android:layout_marginTop="@dimen/y14"
+            android:layout_marginLeft="@dimen/x109"
+            android:src="@mipmap/smallme"/>
+        <TextView
+            android:layout_marginLeft="@dimen/x43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y20"
+            android:textColor="#999999"
+            android:layout_gravity="center"
+            android:text="你当前可享受的"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y20"
+            android:layout_gravity="center"
+            android:textColor="#E72323"
+            android:text="优惠费率"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y20"
+            android:layout_gravity="center"
+            android:textColor="#999999"
+            android:text="如下"/>
+
+        
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y427"
+        android:layout_marginLeft="@dimen/x22"
+        android:layout_marginRight="@dimen/x22"
+        android:background="@drawable/mytean_me"
+        android:paddingBottom="@dimen/y5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y49">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y49">
+
+                <TextView
+                    android:layout_width="@dimen/x160"
+                    android:layout_height="match_parent"
+                    android:text="交易类型"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:layout_marginLeft="@dimen/x115"
+                    android:textSize="@dimen/y20"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/x170"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="match_parent"
+                    android:text="费率"
+                    android:textSize="@dimen/y20"
+                    android:textColor="#666666"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="#ECEDF4"/>
+    
+    <ListView
+        android:background="@drawable/mytean_me"
+        android:id="@+id/myteam_lv_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

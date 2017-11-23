@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<www.hhlc.cn.myapplication.JdRefreshHeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+
+    <ImageView
+        android:id="@+id/ivRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#0f0" />
+
+</www.hhlc.cn.myapplication.JdRefreshHeaderView>

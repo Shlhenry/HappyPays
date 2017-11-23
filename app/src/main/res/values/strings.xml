@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">创乐付聚合版</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="login">登录</string>
+    <string name="in_id">请输入用户名</string>
+    <string name="in_pw">请输入密码</string>
+    <string name="rem_id">记住账号</string>
+    <string name="fog_pw">忘记密码?</string>
+    <string name="reg_id">注册账号</string>
+    <string name="back">返回</string>
+    <string name="reg_newid">注册新用户</string>
+    <string name="tel">手机号码</string>
+    <string name="set_pw">设置登入密码</string>
+    <string name="set_againpw">确认登入密码</string>
+    <string name="agree">我同意</string>
+    <string name="commit">提交</string>
+    <string name="xieyi">《创乐付服务条款协议》</string>
+
+    <string name="str_id">锦弘霖蓝牙设备测试程序V2.6_20161024</string>
+    <string name="menu_find">搜索蓝牙设备</string>
+    <string name="menu_disconnect">断开连接</string>
+    <string name="search">Search Device</string>
+    <string name="start_transport">搜索蓝牙设备</string>
+    <string name="stop_transport">Close Device</string>
+    <string name="stop_audio">Close Resource</string>
+    <string name="send_command">CMD</string>
+    <string name="cancel_command">Cancel</string>
+
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <string name="alert_dialog_text_entry">请输入密码</string>
+    <string name="alert_dialog_ok">确定</string>
+    <string name="alert_dialog_cancel">取消</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

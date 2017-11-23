@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y87"
+        android:orientation="horizontal"
+        android:background="#F4F4F4">
+
+        <LinearLayout
+            android:id="@+id/close_selectcard"
+            android:layout_width="@dimen/x214"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/y25"
+                android:src="@mipmap/close"
+                android:layout_marginLeft="@dimen/x32"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择付款方式"
+            android:textColor="#333333"
+            android:textSize="@dimen/y30"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="#D2D2D2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y632"
+        android:orientation="vertical"
+        android:background="#F4F4F4">
+
+        <LinearLayout
+            android:id="@+id/add_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:orientation="horizontal"
+            android:background="#F4F4F4">
+
+            <ImageView
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y35"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/tianjiaka"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加信用卡付款"
+                android:textColor="#333333"
+                android:textSize="@dimen/y30"
+                android:layout_marginLeft="@dimen/x26"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="@dimen/x14"
+                android:layout_height="@dimen/y24"
+                android:src="@mipmap/jiantou"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x366"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="#D2D2D2"/>
+
+    <ListView
+        android:id="@+id/selectbankcard_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

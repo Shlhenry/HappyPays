@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.erweima.AlipayD0Activity">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Zfbone"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/Zfbone_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/common_title_reback"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="支付"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_below="@+id/RelativeLayout_Zfbone"
+        android:background="@drawable/yaunjiaotwo"
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:minLines="3"
+        android:gravity="center"
+        android:textColorHint="#000"
+        android:hint="请输入您的收款金额"
+        android:paddingLeft="5dp"
+        android:maxLength="10"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/button_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edit_content"
+        android:text="生成logo二维码图片"
+        android:visibility="gone"/>
+
+    <Button
+        android:background="@drawable/yuanjiao"
+        android:id="@+id/button1_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/button_content"
+        android:text="确认收款"/>
+
+    <ImageView
+        android:id="@+id/image_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/button2_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/home"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/image_content"
+        android:text="查询是否成功"/>
+
+</RelativeLayout>
+

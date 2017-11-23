@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y110"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/x120"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x53"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="@dimen/y23"
+            android:layout_width="@dimen/x41"
+            android:layout_height="@dimen/y32"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/smallnocard"/>
+
+        <TextView
+            android:id="@+id/water_type_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="无卡快捷T1"
+            android:layout_marginTop="@dimen/y18"
+            android:textSize="@dimen/y22"/>
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="@dimen/x286"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x217">
+
+        <TextView
+            android:id="@+id/water_card_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y22"
+            android:gravity="center"
+            android:textSize="@dimen/y24"
+            android:text="6228********7370"/>
+
+        <TextView
+            android:id="@+id/water_time_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y15"
+            android:gravity="center"
+            android:textSize="@dimen/y25"
+            android:text="2017-08-25 10:15:58"/>
+
+
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x560"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="@dimen/y38"
+            android:textColor="#FFA23E"
+            android:layout_marginTop="@dimen/y15"/>
+
+        <TextView
+            android:id="@+id/water_money_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999999"
+            android:textSize="@dimen/y38"
+            android:textColor="#FFA23E"
+            android:layout_marginTop="@dimen/y15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x560"
+        android:layout_marginTop="@dimen/y75"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手续费:"
+            android:textSize="@dimen/y20"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/water_tip_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.11"
+            android:textSize="@dimen/y20"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

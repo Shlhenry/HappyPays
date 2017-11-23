@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.futeng.happypays">
+
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Android6.0 蓝牙扫描才需要 -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 摄像头，相机拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- googleplay对应的权限可不加 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 其他权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- DOWNLOAD权限 -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!-- 分享权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".tools.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 集成line客户端登录授权，需要添如下格式的过滤器 -->
+            <intent-filter>
+                <data android:scheme="line.1477692153" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="1ef551f179680" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="5934b0414d815b30f448f5cc23ad59d8" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.bluetoothblt.Blt" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.zxing.BaseActivity" />
+        <activity android:name=".activity.zxing.ZxingMainActivity" />
+        <activity android:name=".activity.zxing.ZxingSecondActivity" />
+        <activity android:name=".activity.erweima.WechatD0Activity" />
+        <activity android:name=".activity.renzheng.RenzhengZiliaoqueren" />
+        <activity android:name=".activity.renzheng.Renzheng_base" />
+        <activity android:name=".activity.renzheng.RenzhengJiesuan" />
+        <activity android:name=".activity.fgmentfour.PasswordAgain" />
+        <activity android:name=".activity.allgridview.MyTeamAllFragment" />
+        <activity android:name=".activity.allgridview.WaterActivity" />
+        <activity android:name=".activity.allgridview.ElectricActivity" />
+        <activity android:name=".activity.fgmentfour.InfoActivity" />
+        <activity android:name=".activity.fgmentfour.OurActivity" />
+        <activity android:name=".activity.mposgather.NormalKeyBoardActivity" />
+        <activity android:name=".activity.nocard.XinCardActivity" />
+        <activity android:name=".activity.fgmentfour.BangXinCardActivity" />
+        <activity android:name=".activity.ForgetPwActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.AgreementActivity" />
+        <activity android:name=".activity.renzheng.listview.ProvinceListActivity" />
+        <activity android:name=".activity.GuideActivity" />
+        <activity android:name=".activity.renzheng.listview.CityActivity" />
+        <activity android:name=".activity.renzheng.listview.AreaActivity" />
+        <activity android:name=".activity.renzheng.listview.BankListActivity" />
+        <activity android:name=".activity.nocard.WukaPayActivity" />
+        <activity android:name=".activity.nocard.WukabeforeActivity" />
+        <activity android:name=".activity.TicketActivity" />
+        <activity android:name=".activity.allgridview.EastDaiActivity" />
+        <activity android:name=".activity.allgridview.KuaijinActivit" />
+        <activity android:name=".activity.webview.WebviewEasydai" />
+        <activity android:name=".activity.watermoney.WaterSaoActivity" />
+        <activity android:name=".activity.watermoney.WaterAllActivity" />
+        <activity android:name=".activity.watermoney.WaterBalanceActivity" />
+        <activity android:name=".activity.watermoney.WaterChangemoneyActivity" />
+        <activity android:name=".activity.erweima.WechatT1Activity" />
+        <activity android:name=".activity.erweima.AlipayD0Activity" />
+        <activity android:name=".activity.erweima.AlipayT1Activity" />
+        <activity android:name=".activity.watermoney.waterotherActivity" />
+        <activity android:name=".activity.UpVersionActivity" />
+
+        <service
+            android:name=".activity.UpdataService"
+            android:enabled="true" />
+
+        <activity android:name=".activity.allgridview.TelmoneyActivity" />
+        <activity android:name=".activity.mposgather.PutongsActivity" />
+        <activity android:name=".activity.mposgather.BbposListActivity" />
+        <activity android:name=".activity.watermoney.MPoswatermoneyActivity" />
+        <activity android:name=".activity.erweima.ErweimamainActivity" />
+        <activity android:name=".activity.MposticketActivity" />
+        <activity android:name=".activity.boothActivity" />
+        <activity android:name=".activity.UpWaterTicketActivity" />
+        <activity android:name=".activity.fgmentfour.CardListActivity" />
+        <activity android:name=".activity.UpWaterImgActivity" />
+        <activity android:name=".activity.NoUpTicketActivity" />
+        <activity android:name=".activity.erweima.UnionActivity" />
+        <activity android:name=".activity.watermoney.IntegralChangeActivity" />
+        <activity android:name=".activity.watermoney.watermanage.WaterMoneyMainActivity" />
+        <activity android:name=".activity.webview.FindBankNumActivity" />
+        <activity android:name=".activity.fgmentfour.ClearInfoActivity" />
+        <activity android:name=".activity.renzheng.RenzhengGuideActivity" />
+        <activity android:name=".activity.fgmentfour.GuildClearInfoActivity" />
+        <activity android:name=".activity.webview.WebviewNoCard" />
+        <activity android:name=".activity.watermoney.erweimawater.erweimaallActivity" />
+        <activity android:name=".activity.nocard.NoCardT1Activity" />
+        <activity android:name=".activity.nocard.SdkeasyActivity" />
+        <activity android:name=".activity.GuideViewpageActivity" />
+        <activity android:name=".activity.textActivity" />
+        <activity android:name=".activity.GuideBeforeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TextActivity" />
+        <activity android:name=".activity.renzheng.RenzhengPhoto" />
+        <activity android:name=".activity.ExpandableListViewTestActivity" />
+        <activity android:name=".activity.fgmentfour.SetActivity" />
+        <activity android:name=".activity.erweimashoukuan.QRcodeActivity" />
+        <activity android:name=".activity.erweimashoukuan.QuickTransationActivity" />
+        <activity android:name=".activity.CalculateActivity" />
+        <activity android:name=".activity.ExchangerateActivity" />
+        <activity android:name=".activity.RealtimeActivity" />
+        <activity android:name=".activity.IndexsActivity" />
+        <activity android:name=".activity.erweimashoukuan.SelectBankcardActivity" />
+        <activity android:name=".activity.erweimashoukuan.AddselectActivity" />
+        <activity android:name=".activity.erweimashoukuan.StatementActivity" />
+        <activity android:name=".activity.sign.SignActivity" />
+        <activity android:name=".activity.erweimashoukuan.HelpCenterActivity" />
+        <activity android:name=".activity.erweimashoukuan.ApplyCardActivity" />
+        <activity android:name=".activity.Text" />
+        <activity android:name=".activity.watermoney.watermanage.WaterMoneyNewActivity" />
+        <activity android:name=".activity.erweimashoukuan.StoreActivity" />
+        <activity android:name=".activity.erweimashoukuan.StoreDetailsActivity" />
+        <activity android:name=".activity.erweimashoukuan.SelectAddressActivity" />
+        <activity android:name=".activity.erweimashoukuan.NewAddressActivity" />
+        <activity android:name=".activity.erweimashoukuan.EditAddressActivity" />
+        <activity android:name=".activity.erweimashoukuan.GetStoreActivity" />
+        <activity android:name=".activity.erweimashoukuan.LogisticActivity" />
+        <activity android:name=".activity.erweimashoukuan.LookLogisticActivity" />
+        <activity android:name=".activity.erweimashoukuan.LogisticAllActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/textAmount"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/yaunjiaotwo"
+        android:inputType="numberDecimal"
+        android:padding="14dp"
+        android:hint="￥0.00"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_zhumy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="设置主密钥"/>
+    <Button
+        android:id="@+id/btn_gongzuo"
+        android:layout_below="@+id/btn_zhumy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="设置工作密钥"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <com.futeng.happypays.view.VirtualKeyboardView
+            android:id="@+id/virtualKeyboardView"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:scrollbars="none"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

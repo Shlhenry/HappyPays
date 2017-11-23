@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.renzheng.PhotoInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_photo"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/photoinfo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/common_title_reback"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentStart="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="照片示例"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_below="@id/RelativeLayout_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/photoinfoone"/>
+
+    <Button
+        android:id="@+id/phtoinfo_next"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/yuanjiao"
+        android:text="我已了解"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4d91e9</color>
+
+    <color name="scan_corner_color">#0effc2</color>
+    <color name="lightdark">#ededed</color>
+
+    <!--<color name="home">#F49F44</color>-->
+    <color name="home">#4d91e9</color>
+    <color name="hui">#c0c0c0</color>
+    <color name="red">#e66969</color>
+    <color name="orange">#f78d04</color>
+    <color name="huis">#333333</color>
+
+    <color name="colorFocused">#fff</color>
+    <color name="colorNormal">#fff</color>
+    <color name="colorToast">#f1f1f1</color>
+    <color name="colorText">#000</color>
+    <color name="colorTextBG">#fff</color>
+    <color name="colorType">#333333</color>
+    <color name="colorTypeBG">#f0f1f7</color>
+    <color name="colorf09617">#f09617</color>
+
+
+
+
+</resources>

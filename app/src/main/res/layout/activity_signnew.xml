@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@mipmap/background">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_quicktrans"
+        android:background="@color/home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88">
+
+        <ImageView
+            android:id="@+id/sign_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/whiteback"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x40"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="签到送积分"
+            android:textSize="@dimen/y34"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y51"
+        android:layout_width="@dimen/x389"
+        android:layout_height="@dimen/y166"
+        android:orientation="vertical"
+        android:background="@drawable/signbg"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/y25">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日签到积分:"
+            android:textSize="@dimen/y22"
+            android:textColor="#fff"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x89"/>
+
+        <TextView
+            android:id="@+id/nowSignIntegral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y28"
+            android:textColor="#FFDE00"
+            android:text="50"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分"
+                android:textSize="@dimen/y22"
+                android:textColor="#fff"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/LinearLayout_sign"
+            android:id="@+id/LinearLayout_signtwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/y15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日签到已奖励"
+                android:textSize="@dimen/y22"
+                android:textColor="#fff"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/nowSignSongIntegral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/y28"
+                android:textColor="#FFDE00"
+                android:text="50"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分,累计签"
+                android:textSize="@dimen/y22"
+                android:textColor="#fff"
+                android:layout_gravity="center_vertical"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/LinearLayout_signtwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/y5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到积分"
+                android:textSize="@dimen/y22"
+                android:textColor="#fff"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/nowSignAllIntegral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/y28"
+                android:textColor="#FFDE00"
+                android:text="50"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分"
+                android:textSize="@dimen/y22"
+                android:textColor="#fff"
+                android:layout_gravity="center_vertical"/>
+
+
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/x662"
+        android:layout_height="@dimen/y545"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@drawable/signbg"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nowtime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y52"
+            android:text="2017年9月8日"
+            android:textSize="@dimen/y22"
+            android:textColor="#fff"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/x610"
+            android:layout_height="@dimen/y464"
+            android:background="@drawable/statementbg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y38"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#2B7AE3"
+                    android:textSize="@dimen/y24"
+                    android:text="周一" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#2B7AE3"
+                    android:textSize="@dimen/y24"
+                    android:text="周二" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#2B7AE3"
+                    android:textSize="@dimen/y24"
+                    android:text="周三" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#2B7AE3"
+                    android:textSize="@dimen/y24"
+                    android:text="周四" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#2B7AE3"
+                    android:textSize="@dimen/y24"
+                    android:text="周五" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#2B7AE3"
+                    android:textSize="@dimen/y24"
+                    android:text="周六" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#2B7AE3"
+                    android:textSize="@dimen/y24"
+                    android:gravity="center"
+                    android:text="周日" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_sign"
+        android:layout_width="@dimen/x226"
+        android:layout_height="@dimen/y89"
+        android:orientation="vertical"
+        android:background="@drawable/statementbg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y50">
+
+        <TextView
+            android:id="@+id/signok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF7719"
+            android:textSize="@dimen/y31"
+            android:text="点击签到"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y8"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/y5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已累计"
+                android:textSize="@dimen/y20"
+                android:textColor="#4B90EB"/>
+            <TextView
+                android:id="@+id/signCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/y20"
+                android:textColor="#4B90EB"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天"
+                android:textSize="@dimen/y20"
+                android:textColor="#4B90EB"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/y25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/y21"
+        android:text="签到有奖励"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#333333"/>
+
+</LinearLayout>

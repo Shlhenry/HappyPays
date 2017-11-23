@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88">
+
+        <ImageView
+            android:id="@+id/union_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/whiteback"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x40"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="银联扫码"
+            android:textSize="@dimen/y34"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/x485"
+        android:layout_height="@dimen/y350"
+        android:src="@mipmap/animation"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y85"/>
+    <LinearLayout
+        android:layout_width="@dimen/x464"
+        android:layout_height="@dimen/y482"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y426"
+            android:background="#fff"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/image_content"
+                android:layout_width="@dimen/x285"
+                android:layout_height="@dimen/y291"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="请扫码确认支付"
+            android:textColor="#fff"
+            android:background="#f79f40"
+            android:gravity="center"
+            android:textSize="@dimen/y27"/>
+
+
+
+    </LinearLayout>
+    
+    
+    
+    
+
+
+
+</LinearLayout>

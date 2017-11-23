@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent_putong"
+    android:clickable="true"
+    tools:context="com.futeng.happypays.activity.mposgather.PutongsActivity">
+
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/putong_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/common_title_reback"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentStart="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MPOS收款"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f6f6f6"/>
+
+
+    <LinearLayout
+    android:background="@drawable/whiteyuanjiao"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="match_parent"
+        android:text="金额"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/edit_pos"
+        android:textSize="18sp"
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:hint="0.00"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:singleLine="true"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="元"
+        android:gravity="center"/>
+
+</LinearLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#f00"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:text="每日单笔最低限额10元，最高限额5万"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <TextView
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:paddingTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:gravity="right"
+        android:layout_height="match_parent"
+        android:text="￥"/>
+
+    <TextView
+        android:id="@+id/text_money"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:text="0.00"/>
+
+
+
+</LinearLayout>
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:text="请选择结算类型:"
+    android:textColor="#000"
+    android:textSize="15sp"
+    android:paddingLeft="50dp"
+    android:gravity="center_vertical"
+    android:layout_marginTop="45dp"/>
+
+
+<LinearLayout
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/checkone"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/check"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="T+1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/checktwo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/check"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="D+0"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/put_ok"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/yuanjiao"
+        android:text="确认刷卡"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+</LinearLayout>

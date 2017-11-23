@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y125">
+
+            <ImageView
+                android:id="@+id/selectbank_img"
+                android:layout_width="@dimen/x47"
+                android:layout_height="@dimen/y47"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y18"
+                android:src="@mipmap/flagtongyong"/>
+
+            <TextView
+                android:id="@+id/selectbank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国银行"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_marginLeft="@dimen/x94"
+                android:textSize="@dimen/y30"
+                android:textColor="#333333"/>
+
+
+            <CheckBox
+                android:id="@+id/quan_default"
+                android:layout_width="@dimen/x57"
+                android:layout_height="@dimen/y57"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y78"
+                android:focusable="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设为默认"
+                android:layout_marginTop="@dimen/y85"
+                android:layout_marginLeft="@dimen/x94"
+                android:textSize="@dimen/y22"
+                android:textColor="#333333"/>
+
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="#D2D2D2"
+        android:layout_marginLeft="@dimen/x30"/>
+
+</LinearLayout>

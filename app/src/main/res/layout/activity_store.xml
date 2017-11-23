@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F0F1F7"
+    xrefreshview:isHeightMatchParent="true"
+    xrefreshview:isWidthMatchParent="true"
+    tools:context="com.futeng.happypays.activity.erweimashoukuan.StoreActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/home">
+
+        <ImageView
+            android:id="@+id/store_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x40"
+            android:src="@mipmap/whiteback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="积分商城"
+            android:textColor="#fff"
+            android:textSize="@dimen/y34"
+            android:id="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/exchange_record"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="兑换记录"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x8"
+        android:paddingRight="@dimen/x8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y60"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/y22"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x33"
+                android:layout_height="@dimen/y33"
+                android:src="@mipmap/jifen"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/x11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的积分:"
+                android:textSize="@dimen/y26"
+                android:textColor="#333333"/>
+            <TextView
+                android:id="@+id/ourintegral"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx"
+                android:textSize="@dimen/y26"
+                android:textColor="#333333"/>
+
+
+
+        </LinearLayout>
+
+    <com.andview.refreshview.XRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ShopXRefreshView">
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shopRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView  >
+
+    </com.andview.refreshview.XRefreshView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="搜索设备" />
+
+        <Button
+            android:id="@+id/btnInterrupt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="断开设备" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="启动刷卡" />
+
+        <Button
+            android:id="@+id/btndispost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="取消交易" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/editRecvData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:focusable="false"
+        android:gravity="top"
+        android:inputType="textMultiLine">
+
+    </EditText>
+</LinearLayout>
+
+
+<!--
+<LinearLayout
+android:id="@+id/linearLayout3"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:weightSum="1">
+
+<Button
+    android:id="@+id/btnWriteMainKey"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.50"
+    android:text="设置主密钥" />
+
+<Button
+    android:id="@+id/btnWriteWKey"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.50"
+    android:text="设置工作密钥" />
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout4"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:weightSum="1">
+
+<Button
+    android:id="@+id/btnGetMAc"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.50"
+    android:text="获取MAC" />
+
+<Button
+    android:id="@+id/btnGetBatty"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.50"
+    android:text="获取电池电量" />
+
+</LinearLayout>-->

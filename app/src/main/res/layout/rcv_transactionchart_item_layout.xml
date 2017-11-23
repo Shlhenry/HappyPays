@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x90"
+    android:layout_height="@dimen/y466"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/rcv_transactionchart_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y5"
+        android:text="22"
+        android:textColor="#333333"
+        android:textSize="@dimen/y12" />
+
+    <View
+        android:id="@+id/rcv_transactionchart_item_chart"
+        android:layout_width="@dimen/x35"
+        android:layout_height="wrap_content"
+        android:background="@color/home" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9b9b9b" />
+
+    <TextView
+        android:id="@+id/rcv_transactionchart_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y9"
+        android:text="2017-9-26"
+        android:textColor="#333333"
+        android:textSize="@dimen/y12" />
+</LinearLayout>

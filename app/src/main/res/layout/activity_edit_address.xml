@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.futeng.happypays.activity.erweimashoukuan.EditAddressActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/home">
+
+        <ImageView
+            android:id="@+id/editaddress_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x40"
+            android:src="@mipmap/whiteback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="编辑地址"
+            android:textColor="#fff"
+            android:textSize="@dimen/y34" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y103"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x150"
+            android:layout_height="wrap_content"
+            android:text="收货人"
+            android:textColor="#333333"
+            android:textSize="@dimen/y32"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x36"/>
+
+        <EditText
+            android:id="@+id/editaddress_consignee"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="请填写收货人"
+            android:textColorHint="#666666"
+            android:textColor="#666666"
+            android:textSize="@dimen/y29"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="#EDEDED"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y103"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x150"
+            android:layout_height="wrap_content"
+            android:text="联系电话"
+            android:textColor="#333333"
+            android:textSize="@dimen/y32"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x36"/>
+
+        <EditText
+            android:id="@+id/editaddress_tel"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="请填写联系电话"
+            android:textColorHint="#666666"
+            android:textColor="#666666"
+            android:textSize="@dimen/y29"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="#EDEDED"/>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_newaddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y103"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x150"
+            android:layout_height="wrap_content"
+            android:text="所在地区"
+            android:textColor="#333333"
+            android:textSize="@dimen/y32"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x36"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="18dp" />
+
+        <TextView
+            android:id="@+id/editaddress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imageView13"
+            android:layout_marginEnd="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imageView13" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200">
+
+        <EditText
+            android:id="@+id/editaddress_particular"
+            android:layout_marginTop="@dimen/x40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请详细填写地址,不少于5个字"
+            android:textSize="@dimen/y29"
+            android:paddingLeft="@dimen/x40"
+            android:background="#fff"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:background="#EDEDED"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="@dimen/x150"
+            android:layout_height="wrap_content"
+            android:text="设为默认"
+            android:textColor="#333333"
+            android:textSize="@dimen/y32"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x36"/>
+
+        <ImageView
+            android:id="@+id/editaddress_default"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x430"
+            android:background="@mipmap/noclickquan"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:background="#F0F1F7"/>
+
+    <TextView
+        android:id="@+id/editaddress_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y75"
+        android:textColor="#DB2121"
+        android:textSize="@dimen/y32"
+        android:gravity="center"
+        android:text="删除地址"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="#EDEDED"/>
+
+    <TextView
+        android:id="@+id/editaddress_save"
+        android:layout_width="@dimen/x498"
+        android:layout_height="@dimen/y72"
+        android:background="@drawable/yuanjiao"
+        android:text="保存"
+        android:textSize="@dimen/y32"
+        android:textColor="#fff"
+        android:layout_marginTop="@dimen/y82"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
+
+
+
+</LinearLayout> 

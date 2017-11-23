@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.futeng.happypays.activity.erweimashoukuan.SelectAddressActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_selectaddress"
+        android:background="@color/home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88">
+
+        <ImageView
+            android:id="@+id/selectaddress_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/whiteback"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x40"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="选择地址"
+            android:textSize="@dimen/y34"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/new_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y124"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/y59"
+            android:src="@mipmap/posit"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x37"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增地址"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x28"
+            android:textColor="#333333"
+            android:textSize="@dimen/y34"/>
+
+        <ImageView
+            android:layout_width="@dimen/x17"
+            android:layout_height="@dimen/y31"
+            android:src="@mipmap/right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x423"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y12"
+        android:background="#F0F1F7"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y71"
+        android:textColor="#333333"
+        android:textSize="@dimen/y32"
+        android:text="收货人信息"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x38"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="#EDEDED"/>
+
+    <ListView
+        android:id="@+id/address_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout> 

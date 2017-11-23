@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/x337"
+        android:layout_height="@dimen/y360"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_marginLeft="@dimen/x8"
+        android:layout_marginRight="@dimen/x8"
+        android:background="@drawable/whiteyuanjiao"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/comImgUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y161"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y40"
+            android:src="@mipmap/redbull" />
+
+        <TextView
+            android:id="@+id/comName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x18"
+            android:layout_marginTop="@dimen/x31"
+            android:text="红牛维生素功能饮料"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textSize="@dimen/y26" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/x131"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:text="已兑换:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/y17" />
+
+                <TextView
+                    android:id="@+id/exchangeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="3600"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/y17" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:text="剩余数量:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/y17" />
+
+                <TextView
+                    android:id="@+id/comCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="20"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/y17" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y31"
+            android:layout_marginTop="@dimen/y10"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y24"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x23"
+                android:src="@mipmap/jifenicon" />
+
+            <TextView
+                android:id="@+id/comMoneyIntegral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x6"
+                android:text="10000"
+                android:textColor="#F1AA21"
+                android:textSize="@dimen/y18" />
+
+            <TextView
+                android:layout_width="@dimen/x89"
+                android:layout_height="@dimen/y31"
+                android:layout_marginLeft="@dimen/x140"
+                android:background="@drawable/getshop"
+                android:gravity="center"
+                android:text="兑换"
+                android:textColor="#333333"
+                android:textSize="@dimen/y21" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y615"
+        android:layout_marginTop="@dimen/y316"
+        android:layout_marginLeft="@dimen/x116"
+        android:layout_marginRight="@dimen/x116">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/jifenhongbao"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y37"
+            android:text="积分红包"
+            android:textColor="#fff"
+            android:layout_marginTop="@dimen/y52"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小付"
+            android:textColor="#FFE922"
+            android:textSize="@dimen/y44"
+            android:layout_marginTop="@dimen/y219"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="给你发了一个积分红包"
+            android:textColor="#fff"
+            android:textSize="@dimen/y40"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_integral_redpack"
+            android:layout_marginTop="@dimen/y70"
+            android:layout_below="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红包积分:"
+                android:textColor="#FFE922"
+                android:textSize="@dimen/y32"/>
+            <TextView
+                android:id="@+id/integral_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#FFE922"
+                android:textSize="@dimen/y32"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_integral"
+            android:layout_marginTop="@dimen/y50"
+            android:layout_below="@+id/LinearLayout_integral_redpack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/get_integral"
+                android:layout_width="@dimen/x238"
+                android:layout_height="@dimen/y69"
+                android:text="领取红包"
+                android:textColor="#EA3030"
+                android:textSize="@dimen/y30"
+                android:gravity="center"
+                android:background="@drawable/redpacket_bg"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/intergal_close"
+        android:layout_width="@dimen/x59"
+        android:layout_height="@dimen/y59"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y92"
+        android:src="@mipmap/closewhite" />
+
+
+</LinearLayout>

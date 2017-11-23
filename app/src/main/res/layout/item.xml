@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_pinyin"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorTypeBG"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="A"
+        android:textColor="@color/colorType"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/guoqi_img"
+            android:layout_marginLeft="20dp"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/y50"
+            android:src="@mipmap/flagtongyong"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/colorTextBG"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="xx"
+            android:textColor="@color/colorText"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/easyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
